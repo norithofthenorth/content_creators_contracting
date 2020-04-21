@@ -15,11 +15,12 @@
 
 
 
-filename = "readme.html"
 
 function getContentType(filename) {
+  
+filename = "readme.html"
   const extension = filename.match(/.*\.([^\.]*)$/)[1];
-
+  return extension
   function showContentType(extension) {
     if (extension === 'text/html') {
       console.log('It\'s html');
@@ -30,6 +31,7 @@ function getContentType(filename) {
     }
   }
 showContentType(extension);
+
 }
 getContentType(filename);
 
