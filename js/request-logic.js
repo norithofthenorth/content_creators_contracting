@@ -18,19 +18,18 @@
 filename = "readme.html"
 function getContentType(filename) {
   const extension = filename.match(/.*\.([^\.]*)$/)[1];
+  return extension
+}
   if (extension === 'html') {
     console.log('it is an html file');
-    return extension;
   } else if (extension === 'css') {
     console.log('its a CSS file dude');
-    return extension;
   } else if (extension === 'js') {
     console.log('definitley javascript bro');
-    return extension;
   } else {
     console.log('no idea man')
   }
-}
+
 getContentType(filename);
 
 
